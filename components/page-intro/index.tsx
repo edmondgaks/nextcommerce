@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // import SwiperCore, {EffectFade, Navigation} from 'swiper';
 import { EffectFade, Navigation, Pagination } from 'swiper/modules';
 import Link from 'next/link';
-
+import React from 'react';
 // SwiperCore.use([EffectFade, Navigation]);
 
 const PageIntro = () => {

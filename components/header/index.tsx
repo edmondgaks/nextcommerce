@@ -1,17 +1,17 @@
+"use client";
 import { useState, useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import useOnClickOutside from 'use-onclickoutside';
 import Logo from '../../assets/icons/logo';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { RootState } from 'store';
-
+import { RootState } from '../../store';
+import React from 'react';
 type HeaderType = {
   isErrorPage?: Boolean;
 }
 
 const Header = ({ isErrorPage }: HeaderType) => {
-  const router = useRouter();
   const pathname = usePathname();
   const { cartItems } = useSelector((state: RootState)  => state.cart);
   const arrayPaths = ['/'];  

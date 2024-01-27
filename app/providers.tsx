@@ -2,7 +2,7 @@
 import React, { ReactNode } from "react";
 import { Provider } from "react-redux";
 import { store } from "../store";
-import Header from "components/header";
+import Header from "../components/header";
 import { usePathname } from "next/navigation";
 
 const Providers = ({ children }: { children: ReactNode }) => {
